@@ -89,4 +89,31 @@ for k in range(1, 10, 2):
 for m in range(10):
     print(m)
 
+###########################################################################################
+
+# While loops
+    
+it = 4 
+
+while it>1:
+    if it != 3:
+        print("It is 3")
+    print(it)
+    it = it - 1 # Decrementing the value of it
+
+print("While loop completed")
+
+#while it>1:
+#    if it != 3:
+#        break
+#    print(it)
+#    it = it - 1 # Decrementing the value of it
+
+while it>1:
+    if it == 9:
+        continue
+    if it == 3:
+        break
+    print(it)
+    it = it - 1 # Decrementing the value of it
 
