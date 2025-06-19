@@ -39,6 +39,48 @@ my_dict = {
     "city": "Mumbai"
 }
 
+print(my_dict["name"])  # rahul
+print(my_dict["age"])   # 30
+print(my_dict["city"])  # Mumbai
+
+# Adding a new key-value pair
+my_dict["country"] = "India"
+print(my_dict)  # {'name': 'rahul', 'age': 30, 'city': 'Mumbai', 'country': 'India'}
+
+# Removing a key-value pair
+del my_dict["age"]
+print(my_dict)  # {'name': 'rahul', 'city': 'Mumbai', 'country': 'India'}
+
+##########################################################################################################
+# If statements #else statements
+
+# If statements are used to execute a block of code based on a condition
+
+greeting = "Good Morning"
+
+if greeting == "Morning":
+    print("Good Morning to you too!")
+else:
+    print("Hello!")
+print("if else condition code is completed")
+# This will print "Hello!" because the condition is not met
+
+
+#####################################################################################
+#loops
+# Loops are used to iterate over a sequence (like a list or a string)
+
+obj = [2, 3, 5, 7, 9]
+for i in obj:
+    print(i*2)  # This will print each element in the list
+
+# sum of First Natural numbers 1+2+3+4+5 = 15
+
+for j in range(1, 6):  # range(start, stop) generates numbers from start to stop-1
+    print(j)  # This will print numbers from 1 to 5
+
+
+
 
 
 
