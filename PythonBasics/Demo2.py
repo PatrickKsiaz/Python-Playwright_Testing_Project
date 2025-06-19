@@ -76,12 +76,17 @@ for i in obj:
 
 # sum of First Natural numbers 1+2+3+4+5 = 15
 
+summation = 0 
 for j in range(1, 6):  # range(start, stop) generates numbers from start to stop-1
     print(j)  # This will print numbers from 1 to 5
+    summation = summation + j 
+print(summation)
 
 
+for k in range(1, 10, 2):
+    print(k)    # This will print odd numbers from 1 to 9
 
-
-
+for m in range(10):
+    print(m)
 
 
