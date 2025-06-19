@@ -9,9 +9,13 @@ file = open('test.txt')
 print(file.readline())
 print(file.readline())
 
-file.close()
 
 
 #Print line by line using readline method
+line = file.readline()
+while line != "":
+    print(line)
+    line = file.readline()
 
+file.close()
 
