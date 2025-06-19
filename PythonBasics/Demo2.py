@@ -26,6 +26,18 @@ print(values)  # [10, 2, 'rahul', 4, 5, 3, 'shetty']
 values.remove("shetty")
 print(values)  # [10, 2, 'rahul', 4, 5, 3]
 
+#Tuple
+# Tuple is similar to list but immutable (cannot be changed after creation)
+my_tuple = (1, 2, "rahul", 4, 5)
+print(my_tuple[2])  # rahul
+
+#Dicitionary
+# Dictionary is a collection of key-value pairs
+my_dict = {
+    "name": "rahul",
+    "age": 30,
+    "city": "Mumbai"
+}
 
 
 
