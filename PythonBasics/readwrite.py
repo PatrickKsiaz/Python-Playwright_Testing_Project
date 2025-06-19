@@ -12,10 +12,18 @@ print(file.readline())
 
 
 #Print line by line using readline method
-line = file.readline()
-while line != "":
+#line = file.readline()
+#while line != "":
+#    print(line)
+#    line = file.readline()
+
+for line in file.readlines():
     print(line)
-    line = file.readline()
+#Print all the lines at once
+    
+
+
+
 
 file.close()
 
