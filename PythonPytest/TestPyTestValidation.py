@@ -10,7 +10,7 @@ def preWork():
 
 def test_initialCheck(preWork):
     print("This is first test")
-    assert preWork == "pass"
+    assert preWork == "fail"
 
 
 def test_initialCheck(preWork):
