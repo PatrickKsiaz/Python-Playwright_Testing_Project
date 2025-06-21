@@ -10,15 +10,15 @@ def preWork():
 @pytest.fixture(scope="module") #@scope = module
 def secondWork():
     print("I setup module instance")
-    yield
+    yield #pause
     print("tear down validation")
 
-
+@pytest.mark.smoke
 def test_initialCheck(preWork,secondWork):
     print("This is first test")
     assert preWork == "fail"
 
-
-def test_initialCheck(preWork, secondWork):
+@pytest.mark.skip
+def test_SecondCheck(preWork, secondWork):
     print("This is second test")
 

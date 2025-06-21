@@ -13,6 +13,9 @@ def preWork():
     return "pass"
 
 
+@pytest.mark.smoke
+def test_thirdCheck(preSetupWork):
+    print("This is Thire test")
 
 
 
