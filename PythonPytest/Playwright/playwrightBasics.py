@@ -9,3 +9,12 @@ def test_playwrightBasics(playwright):
 def test_playwrightShortCut(page: Page):
     page.goto("https://rahulshettyacademy.com")
     
+
+def test_coreLocators(page: Page):
+    page.goto("https://rahulshettyacademy.com/loginpagePractise")
+    page.get_by_label("Username:").fill("rahukshettyacademy")
+    page.get_by_label("Password").fill("learning")
+    page.locator("#signInBtn").click()
+    assert page.locator(".alert-success").is_visible()
+
+    
