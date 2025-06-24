@@ -1,3 +1,5 @@
+import expect from playwright.sync_api import Page
+
 def test_UIvalidationDynamicScript(page= Page):
     #iphone X , Nokia Edge - verify 2 items are showing in the cart
     page.goto("https://rahulshettyacademy.com/loginpagePractise")
@@ -8,6 +10,10 @@ def test_UIvalidationDynamicScript(page= Page):
     page.get_by_role(role="button", name="Sign In").click()
     page.locator("app-card").filter("has_text='Iphone X'").get_by_role("button", name="Add to Cart").click()
     page.locator("app-card").filter("has_text='Nokia Edge'").get_by_role("button", name="Add to Cart").click()
+    page.get_by_text("Checkout").click()
+    page.locator('.media-body')
+    expect(page.locator('.media-body')).to_have_count(2)
+    #verify the cart items
     
 
 
