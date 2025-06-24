@@ -25,8 +25,7 @@ def test_coreLocators(page: Page):
     
 def test_firefoxBrowser(playwright):
     test_firefoxBrowser = playwright.firefox.launch(headless=False) # Launch Firefox in non-headless mode
-    browser = firefoxBrowser.launch(headless=False)
-    page = browser.new_page()
+    page = firefoxBrowser.new_page()
     page.goto("https://rahulshettyacademy.com/loginpagePractise")
     page.get_by_label("Username:").fill("rahukshettyacademy")
     page.get_by_label("Password").fill("learning")
@@ -36,7 +35,7 @@ def test_firefoxBrowser(playwright):
     page.get_by_role(role="button", name="Sign In").click()
     expect(page.get_by_text("Incorrect username/password")).to_be_visible() # Wait for the error message to be visible
 
-
+    
     
 
 
